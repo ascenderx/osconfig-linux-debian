@@ -1,2 +1,2 @@
 # osconfig-linux-debian
-Personal configuration files and script for Debian Linux
+Personal configuration files and scripts for Debian Linux
