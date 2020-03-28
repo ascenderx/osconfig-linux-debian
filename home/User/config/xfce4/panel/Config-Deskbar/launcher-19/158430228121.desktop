@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=xterm
+Comment=
+Exec=xterm -title "XTerm" -fa "Terminus" -fs 12 -bg "black" -fg "white" -bc +bdc -cr "green" -ms "red" -e "/bin/bash" -l %f
+Icon=xterm
+Path=
+Terminal=false
+StartupNotify=false

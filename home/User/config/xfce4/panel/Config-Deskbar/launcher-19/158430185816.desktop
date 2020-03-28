@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=xman
+Comment=
+Exec=xman %f
+Icon=/home/downerj/Pictures/Icons/x11.png
+Path=
+Terminal=false
+StartupNotify=false
