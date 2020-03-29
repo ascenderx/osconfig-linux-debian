@@ -1,0 +1,15 @@
+# Copy all *.ttf files to $HOME/.fonts/.
+
+# From Google Fonts (https://fonts.google.com):
+Anonymous Pro
+Ubuntu
+Ubuntu Mono
+Source Code Pro
+
+# https://sourceforge.net/projects/cm-unicode
+Computer Modern Unicode
+
+# sudo apt install xfonts-terminus
+Terminus
+
+
