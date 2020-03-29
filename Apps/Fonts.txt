@@ -5,11 +5,11 @@ Anonymous Pro
 Ubuntu
 Ubuntu Mono
 Source Code Pro
+Noto Sans Mono
 
 # https://sourceforge.net/projects/cm-unicode
 Computer Modern Unicode
 
 # sudo apt install xfonts-terminus
 Terminus
-
 
