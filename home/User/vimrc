@@ -28,7 +28,7 @@ if has('gui_running')
   nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
   
   " GUI initial dimensions.
-  set lines=11 columns=80
+  set lines=20 columns=80
 
   " GUI font.
   set guifont=Terminus\ 12
