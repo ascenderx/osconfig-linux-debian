@@ -2,10 +2,11 @@
 
 # From Google Fonts (https://fonts.google.com):
 Anonymous Pro
+Fira Mono
+Noto Sans Mono
+Source Code Pro
 Ubuntu
 Ubuntu Mono
-Source Code Pro
-Noto Sans Mono
 
 # https://sourceforge.net/projects/cm-unicode
 Computer Modern Unicode
