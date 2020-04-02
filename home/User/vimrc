@@ -15,7 +15,7 @@ set expandtab
 set backspace=indent,eol,start
 
 " Color scheme.
-colo elflord
+colo torte " elflord, industry, koehler, murphy, pablo, torte 
 
 " Enable the following if running GVim.
 if has('gui_running')
