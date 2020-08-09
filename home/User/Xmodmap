@@ -1,2 +1,1 @@
-keysym BackSpace = BackSpace Delete
-
+.Xmodmap

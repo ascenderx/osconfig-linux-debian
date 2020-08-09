@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# This file is meant to be sourced from a resource/profile file.
+#!/bin/false
 
 # Set Lynx homepage to DuckDuckGo Lite.
 export WWW_HOME="https://ddg.gg/lite"
