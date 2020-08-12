@@ -1,6 +1,13 @@
 #!/bin/false
 
 ##########
+# Shell settings.
+##########
+
+# Update the hostname from "localhost".
+#sudo hostname Chromebook
+
+##########
 # Installing/updating Crouton.
 ##########
 
