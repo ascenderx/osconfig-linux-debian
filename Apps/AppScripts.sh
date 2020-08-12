@@ -1,4 +1,4 @@
-# Note: This file is not intended to be run.
+#!/bin/false
 
 # Invert screen colors (X11).
 xcalib -i -a
