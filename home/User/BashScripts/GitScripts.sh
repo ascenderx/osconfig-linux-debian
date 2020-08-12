@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# This file is meant to be sourced from a resource/profile file.
+#!/bin/false
 
 # Get the current branch.
 alias GitBr="git branch | grep '\\*' | cut -d\  -f2"
