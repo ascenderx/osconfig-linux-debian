@@ -46,6 +46,7 @@ python3
 python3-pip
 qpdf
 synaptic
+tcsh
 timidity
 timidity-interfaces-extra
 tree
@@ -63,7 +64,10 @@ xpdf-utils
 xscreensaver
 xscreensaver-data
 xscreensaver-data-extra
+xserver-xorg-input-synaptics
 xsltproc
 xterm
 yelp
 zenity
+zsh
+zsh-doc

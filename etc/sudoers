@@ -6,6 +6,7 @@
 # For more information, consult the manpage (`man sudoers`).
 
 # Reset environment variables and show asterisks on sudo passwords.
+# Only set pwfeedback if using sudo verion 1.8.31+.
 Defaults env_reset,pwfeedback
 
 # Secure binaries
