@@ -49,15 +49,15 @@ fi
 alias ls="/usr/bin/env ls -Fx --color=auto --group-directories-first"
 
 # Colorize the prompt.
-shellstr="\e[1;38;2;255;0;0m""bash"
-userstr="\e[1;38;2;255;255;0m""\u"
-atstr="\e[1;38;2;0;255;127m""@"
-hoststr="\e[1;38;2;255;0;0m""\h"
-distr="\e[1;38;2;0;255;255m""\W"
-symstr="\e[1;38;2;0;255;127m""\$"
-reset="\e[0m"
+shellstr="\[\e[1;38;2;255;0;0m\]""bash"
+userstr="\[\e[1;38;2;255;255;0m\]""\u"
+atstr="\[\e[1;38;2;0;255;127m\]""@"
+hoststr="\[\e[1;38;2;255;0;0m\]""\h"
+distr="\[\e[1;38;2;0;255;255m\]""\W"
+symstr="\[\e[1;38;2;0;255;127m\]""\$"
+reset="\[\e[0m\]"
 
-PS1="\[$shellstr $userstr$atstr$hoststr $distr $symstr$reset\] "
+PS1="$shellstr $userstr$atstr$hoststr $distr $symstr$reset "
 
 unset shellstr userstr atstr hoststr distr symstr reset
 
