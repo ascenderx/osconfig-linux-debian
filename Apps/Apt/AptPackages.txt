@@ -48,6 +48,7 @@ python3-pip
 qpdf
 synaptic
 tcsh
+tiled
 timidity
 timidity-interfaces-extra
 tree
