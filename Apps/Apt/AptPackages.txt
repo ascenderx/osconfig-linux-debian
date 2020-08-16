@@ -5,6 +5,7 @@ curl
 default-jdk
 dnsutils
 faenza-icon-theme
+flatpak
 fonts-ubuntu
 fonts-ubuntu-console
 freeglut3-dev
