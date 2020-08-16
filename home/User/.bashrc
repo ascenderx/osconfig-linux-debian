@@ -5,7 +5,7 @@
 ##########
 
 # Set file creation mask.
-# Each set bit it an unset flag for each new file.
+# Each set bit is an unset flag for each new file.
 # Example: umask 022 means chmod go-w.
 umask 022
 
@@ -49,20 +49,20 @@ fi
 alias ls="/usr/bin/env ls -Fx --color=auto --group-directories-first"
 
 # Colorize the prompt.
-shellstr="\e[1;38;2;255;0;0m""bash"
-userstr="\e[1;38;2;255;255;0m""\u"
-atstr="\e[1;38;2;0;255;127m""@"
-hoststr="\e[1;38;2;255;0;0m""\h"
-distr="\e[1;38;2;0;255;255m""\W"
-symstr="\e[1;38;2;0;255;127m""\$"
-reset="\e[0m"
+shellstr="\[\e[1;38;2;255;0;0m\]""bash"
+userstr="\[\e[1;38;2;255;255;0m\]""\u"
+atstr="\[\e[1;38;2;0;255;127m\]""@"
+hoststr="\[\e[1;38;2;255;0;0m\]""\h"
+dirstr="\[\e[1;38;2;0;255;255m\]""\W"
+symstr="\[\e[1;38;2;0;255;127m\]""\$"
+reset="\[\e[0m\]"
 
-PS1="\[$shellstr $userstr$atstr$hoststr $distr $symstr$reset\] "
+PS1="$shellstr $userstr$atstr$hoststr $dirstr $symstr$reset "
 
-unset shellstr userstr atstr hoststr distr symstr reset
+unset shellstr userstr atstr hoststr dirstr symstr reset
 
 # Set the terminal command to update the title on each line.
-PROMPT_COMMAND='thisdir=$(basename "$PWD"); echo -ne "\x1b]0;$USER@$HOSTNAME:$thisdir\x07"; unset thisdir'
+PROMPT_COMMAND='thisdir=$(basename "$PWD"); echo -ne "\e]0;$USER@$HOSTNAME:$thisdir\x07"; unset thisdir'
 
 # History size settings.
 export HISTSIZE=1000
