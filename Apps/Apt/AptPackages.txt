@@ -37,6 +37,7 @@ musescore
 neofetch
 nodejs
 npm
+octave
 onboard
 openssh-client
 openssh-server
@@ -46,6 +47,7 @@ plank
 python3
 python3-pip
 qpdf
+r-base
 synaptic
 tcsh
 tiled
