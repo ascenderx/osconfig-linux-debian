@@ -18,3 +18,6 @@ JetBrains Mono
 # sudo apt install xfonts-terminus
 Terminus
 
+# https://github.com/belluzj/fantasque-sans
+Fantasque Sans Mono
+
