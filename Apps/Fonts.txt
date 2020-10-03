@@ -21,3 +21,6 @@ Terminus
 # https://github.com/belluzj/fantasque-sans
 Fantasque Sans Mono
 
+# https://github.com/microsoft/cascadia-code/releases 
+Cascadia Code
+
