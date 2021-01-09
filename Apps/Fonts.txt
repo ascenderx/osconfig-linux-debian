@@ -24,3 +24,9 @@ Fantasque Sans Mono
 # https://github.com/microsoft/cascadia-code/releases 
 Cascadia Code
 
+# https://larsenwork.com/monoid/
+Monoid
+
+# https://github.com/i-tu/Hasklig/ 
+Hasklig
+
