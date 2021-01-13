@@ -39,6 +39,7 @@ nodejs
 npm
 octave
 onboard
+opam
 openssh-client
 openssh-server
 php
