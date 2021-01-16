@@ -5,3 +5,7 @@
 **/*.xz
 **/*.zip
 
+# Vim temp files
+**/*.swp
+**/.*.sqp
+
