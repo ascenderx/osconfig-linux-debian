@@ -19,6 +19,7 @@ git
 gksu
 gparted
 gpick
+groovy
 gvim
 gvfs-backends
 gvfs-fuse
