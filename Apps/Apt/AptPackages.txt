@@ -21,7 +21,6 @@ gksu
 gparted
 gpick
 groovy
-gvim
 gvfs-backends
 gvfs-fuse
 heroku
@@ -60,6 +59,7 @@ timidity
 timidity-interfaces-extra
 tree
 vim
+vim-gtk3
 vokoscreen
 wget
 x11-apps
