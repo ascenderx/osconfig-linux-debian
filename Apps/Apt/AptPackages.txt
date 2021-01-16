@@ -82,6 +82,7 @@ xfce4-verve-plugin
 xfce4-wavelan-plugin
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
+xfig
 xfonts-terminus
 xfwm4-themes
 xinput
