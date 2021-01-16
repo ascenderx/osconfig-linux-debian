@@ -4,7 +4,9 @@ arduino
 clisp
 curl
 default-jdk
+dillo
 dnsutils
+epiphany
 faenza-icon-theme
 flatpak
 fonts-ubuntu
@@ -97,6 +99,7 @@ xscreensaver-data-extra
 xserver-xorg-input-synaptics
 xsltproc
 xterm
+xxd
 yelp
 zenity
 zsh
