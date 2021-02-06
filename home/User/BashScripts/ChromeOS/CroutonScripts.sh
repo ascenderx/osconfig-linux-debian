@@ -72,7 +72,7 @@ debianMount=$(mount | grep "DebianChroot")
 if [[ "$debianMount" == *noexec* ]]
 then
   echo "Remounting the SD Card as an exec partition."
-  sudo mount -o remount,exec /media/removable/DebianChroot
+  sudo mount -o rw,remount,exec,symfollow /media/removable/DebianChroot
 fi
 
 cd /media/removable/DebianChroot
