@@ -54,7 +54,7 @@ sudo chgrp downerj downerj
 ##########
 # Install the chroot.
 ##########
-sudo crouton -t audio,cli-extra,core,extension,keyboard,x11,xfce,xfce-desktop,xiwi,xorg -r buster -n "DebianChroot" -p "/media/removable/DebianChroot"
+sudo crouton -t audio,cli-extra,core,extension,keyboard,x11,xfce,xiwi,xorg -r buster -n "DebianChroot" -p "/media/removable/DebianChroot"
 
 ##########
 # Change root.
