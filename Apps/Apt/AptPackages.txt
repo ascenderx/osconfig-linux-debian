@@ -54,6 +54,7 @@ python3-pip
 qpdf
 r-base
 scm
+sqlite3
 synaptic
 tcsh
 texmacs
