@@ -28,6 +28,7 @@ gvfs-fuse
 heroku
 htop
 idle3
+libglew-dev
 lshw
 lshw-gtk
 manpages
