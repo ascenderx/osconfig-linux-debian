@@ -4,6 +4,8 @@ syntax on
 set number
 " Add end-of-line characters.
 "set list
+" Disable word wrapping.
+set nowrap
 
 " Configure tabs.
 filetype plugin indent on
