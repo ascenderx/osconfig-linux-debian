@@ -20,6 +20,7 @@ geany
 gimp
 git
 gksu
+golang
 gparted
 gpick
 groovy
@@ -29,8 +30,11 @@ heroku
 htop
 idle3
 libglew-dev
+libglfw3-dev
 lshw
 lshw-gtk
+lua5.4
+lynx
 manpages
 manpages-dev
 mesa-utils
@@ -42,6 +46,7 @@ musescore
 neofetch
 nodejs
 npm
+ocaml
 octave
 onboard
 opam
@@ -51,9 +56,13 @@ php
 php-fpm
 plank
 python3
+python3-pep8
 python3-pip
 qpdf
 r-base
+ruby
+rustc
+scala
 scm
 sqlite3
 synaptic
