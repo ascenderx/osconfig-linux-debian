@@ -16,6 +16,12 @@ set expandtab
 " Configure backspace.
 set backspace=indent,eol,start
 
+" Set the swap directory.
+set directory=~/.vim/swapfiles//
+
+" Open vertical splits to the right.
+set splitright
+
 " Color scheme.
 " elflord, industry, koehler, murphy, pablo, torte
 colo torte 

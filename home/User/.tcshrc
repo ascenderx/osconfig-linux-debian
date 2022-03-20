@@ -1,3 +1,5 @@
+#!/usr/bin/env tcsh
+
 ##########
 # This file is intended for the TENEX C Shells (tcsh).
 ##########
@@ -7,26 +9,21 @@
 # Example: umask 022 means chmod go-w.
 umask 022
 
+# Set $PATH so that it includes the user's private binaries, if the
+# directory exists.
+if ( -d "$HOME/.local/bin" ) then
+  setenv PATH="$HOME/.local/bin:$PATH"
+endif
+
 # Test for an interactive shell.
 if (! $?prompt) then
   # Shell is non-interactive. Finish and return.
   exit
 endif
 
-# Query on deletion, etc.
-alias cp /usr/bin/env cp -i
-alias mv /usr/bin/env mv -i
-alias rm /usr/bin/env rm -i
-
-# Use human-readable file sizes when checking free space, disk
-# listings, etc.
-alias df /usr/bin/env df -h
-alias du /usr/bin/env du -h
-
-# Display regex searches in color.
-alias grep /usr/bin/env grep --color
-alias egrep /usr/bin/env egrep --color
-alias fgrep /usr/bin/env fgrep --color
+if ( -f "$HOME/.tcsh_aliases" ) then
+  source $HOME/.tcsh_aliases
+endif
 
 # List directories in color, directories first.
 set color
@@ -34,20 +31,9 @@ if ( -f "$HOME/.dircolors" ) then
   eval `dircolors -c $HOME/.dircolors`
 endif
 
-alias ls /usr/bin/env ls -Fx --color=auto --group-directories-first
-
-# Colorize the prompt.
-set shellstr = "%{\e[1;38;2;255;0;0m%}""tcsh"
-set userstr = "%{\e[1;38;2;255;255;0m%}""%n"
-set atstr = "%{\e[1;38;2;0;255;127m%}""@"
-set hoststr = "%{\e[1;38;2;255;0;0m%}""%M"
-set dirstr = "%{\e[1;38;2;0;255;255m%}""%c"
-set symstr = "%{\e[1;38;2;0;255;127m%}""%#"
-set reset = "%{\e[0m%}"
-
-set prompt = "${shellstr} ${userstr}${atstr}${hoststr} ${dirstr} ${symstr}${reset} "
-
-unset shellstr userstr atstr hoststr dirstr symstr reset
+if ( -f "$HOME/.tcsh_prompt" ) then
+  source $HOME/.tcsh_prompt
+endif
 
 # History size settings.
 setenv HISTSIZE 1000

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ##########
 # This file is intended for Bourne-again Shells (bash).
 # This file by default is sourced in non-login mode, though it can be
@@ -11,40 +13,22 @@ umask 022
 
 # Set $PATH so that it includes the user's privates binaries, if the
 # direcroty exists.
-if [[ -d "$HOME/bin" ]]
+if [[ -d "$HOME/.local/bin" ]]
 then
-  export PATH="$HOME/bin:$PATH"
+  export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Run the user's path-include script, if it exists.
-if [[ -f "$HOME/.bash_include" ]]
-then
-  source $HOME/.bash_include
-fi
-
-# Test for an interactive shell. There is no need to set anything
-# past this point for scp and rcp, and it's important to refrain 
-# from outputting anything in those cases.
+# Test for an interactive shell. 
 if [[ $- != *i* ]]
 then
 	# Shell is non-interactive. Be done now!
 	return
 fi
 
-# Query on deletion, etc.
-alias cp="/usr/bin/env cp -i"
-alias mv="/usr/bin/env mv -i"
-alias rm="/usr/bin/env rm -i"
-
-# Use human-readable file sizes when checking free space, disk
-# listings, etc.
-alias df="/usr/bin/env df -h"
-alias du="/usr/bin/env du -h"
-
-# Display regex searches in color.
-alias grep="/usr/bin/env grep --color"
-alias egrep="/usr/bin/env egrep --color"
-alias fgrep="/usr/bin/env fgrep --color"
+if [[ -f "$HOME/.bash_aliases" ]]
+then
+  source $HOME/.bash_aliases
+fi
 
 # List directories in color, directories first.
 if [[ -f "$HOME/.dircolors" ]]
@@ -52,23 +36,16 @@ then
   eval $(dircolors $HOME/.dircolors)
 fi
 
-alias ls="/usr/bin/env ls -Fx --color=auto --group-directories-first"
+if [[ -f "$HOME/.bash_prompt" ]]
+then
+  source $HOME/.bash_prompt
+fi
 
-# Colorize the prompt.
-shellstr="\[\e[1;38;2;255;0;0m\]""bash"
-userstr="\[\e[1;38;2;255;255;0m\]""\u"
-atstr="\[\e[1;38;2;0;255;127m\]""@"
-hoststr="\[\e[1;38;2;255;0;0m\]""\h"
-dirstr="\[\e[1;38;2;0;255;255m\]""\W"
-symstr="\[\e[1;38;2;0;255;127m\]""\$"
-reset="\[\e[0m\]"
-
-PS1="$shellstr $userstr$atstr$hoststr $dirstr $symstr$reset "
-
-unset shellstr userstr atstr hoststr dirstr symstr reset
-
-# Set the terminal command to update the title on each line.
-PROMPT_COMMAND='thisdir=$(basename "$PWD"); echo -ne "\e]0;$USER@$HOSTNAME:$thisdir\x07"; unset thisdir'
+# Message of the day.
+if [[ -f "$HOME/.bash_motd" ]]
+then
+  source $HOME/.bash_motd
+fi
 
 # History size settings.
 export HISTSIZE=1000
